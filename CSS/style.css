@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500&display=swap');
+@keyframes pisca {
+    0% { opacity: 0,2;}
+    50% { opacity: 1;}
+    100% { opacity: 0.2;}
+}
+* {
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 500;
+}
+body {
+    display: flex;
+    justify-content: center;
+}
+.urna{
+    margin-top: 20vh;
+    display: flex;
+    background-color: #dbd5c9;
+    padding: 30px;
+}
+.tela{
+    width: 500px;
+    height: 320px;
+    background: linear-gradient(to right, #E8E8E8, #C1C1C1);
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+}
+.teclado{
+    background-color: #403A3A;
+    margin-left: 30px;
+}
+.teclado--botao {
+    font-size: 25px;
+    width: 70px;
+    height: 40px;
+    background-color: BLACK;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    cursor: pointer;
+    box-shadow: 3px 3px 0px #555;
+}
+.botao--branco {
+    background-color: whitesmoke;
+    color: black;
+    font-size: 15px;
+}
+.botao--corrige {
+    background-color: rgb(194, 194, 6);
+    color: black;
+    font-size: 15px;
+}
+.botao--confirma{
+    background-color: green;
+    color: black;
+    font-size: 15px;
+    width: 90px;
+    height: 50px;
+}
+.teclado--linha{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.d-1 {
+    flex: 1;
+    display: flex;
+}
+.d1-left{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+.d1-right{
+    width:90px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+
+}
+.d-1-1 {
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.d-1-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.d-1-3{
+    display: flex;
+    align-items: center;
+}
+.numero {
+    display: inline-block;
+    width: 30px;
+    height: 40px;
+    border: 1px solid black;
+    text-align: center;
+    line-height: 40px;
+    font-size: 25px;
+    margin-right: 2px;
+}
+.teclado--botao:hover{
+    box-shadow: 2px 3px 0px whitesmoke;
+    transition-duration: .5s;
+}
+.d-1-4{
+    display: flex;
+    flex: 1;
+    line-height: 30px;
+}
+.d-2 {
+    font-size: 14px;
+    padding-left: 10px;
+    border-top: 2px solid black;
+    height: 50px;
+    font-size: 15px;
+}
+.pisca {
+    animation-name: pisca;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}   
+
+.d-1-image  {
+    background-color: white;
+    text-align: center;
+    border: 1px solid black;
+    width: 100%;
+}
+.d-1-image img {
+    width: 100%;
+}
+.small{
+    width: 80%;
+}
+.aviso--grande  {
+    font-weight: bold;
+    margin-top: 20px;
+    line-height: 40px;
+    font-size: 40px;
+}
+.avisoGrande{
+    display: inline-block;
+    margin: auto ;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
